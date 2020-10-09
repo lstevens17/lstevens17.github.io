@@ -1,5 +1,5 @@
 ---
-permalink: /lol
+permalink: /test/
 ---
 
 # Scripts and files associated with the _C. bovis_ manuscript
