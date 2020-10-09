@@ -2,7 +2,7 @@
 main:
   # - title: "Sample Posts"
   #   url: /year-archive/
-    - title: "Sample Collections"
-      url: /lol/
+    - title: "Sample Collektions"
+      url: /test.html
   # - title: "Sitemap"
   #   url: /sitemap/
