@@ -9,32 +9,49 @@ body {
 }
 
 .container {
-  max-width: 720px;
+  max-width: 760px;
   padding: 2rem 1.5rem;
   margin: 0 auto;
 }
 
 /* Header */
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .header h1 {
-  margin-bottom: 0.2rem;
+  margin: 0;
   font-size: 2.2rem;
   font-weight: 600;
 }
 
 .subtitle {
-  margin-top: 0;
+  margin-top: 0.3rem;
   color: #555;
 }
 
 /* Sections */
 section {
-  margin-top: 2.5rem;
+  margin-top: 2.8rem;
 }
 
 h2 {
   font-size: 1.25rem;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }
 
@@ -44,12 +61,12 @@ ul {
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 /* Publications */
 .publications li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 
 .note {
@@ -67,10 +84,58 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Image + text blocks */
+.image-text {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.image-text img {
+  width: 220px;
+  border-radius: 6px;
+}
+
+.image-text .text {
+  flex: 1;
+}
+
+.image-text.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Contact */
+.contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact li {
+  margin-bottom: 0.4rem;
+}
+
 /* Footer */
 .footer {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   font-size: 0.85rem;
   color: #777;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-text,
+  .image-text.reverse {
+    flex-direction: column;
+  }
+
+  .image-text img {
+    width: 100%;
+    max-width: 340px;
+  }
 }
 
